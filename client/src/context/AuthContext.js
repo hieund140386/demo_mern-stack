@@ -19,7 +19,6 @@ export const AuthContextProvider = ({ children }) => {
     }
     try {
       const response = await axios.get(`${baseUrl}/auth`)
-      console.log("response loadUser: ", response)
       if (response.data.success) {
         dispatch({
           type: SET_AUTH, 
@@ -70,7 +69,6 @@ export const AuthContextProvider = ({ children }) => {
     try {
       const response = await axios.post(`${baseUrl}/auth/login`, userForm);
       const { data: {success, accessToken} } = response;
-      console.log("loginUser data: ", response)
       if (success) {
         localStorage.setItem(LOCAL_STORAGE_TOKEN_NAME, accessToken);
       }

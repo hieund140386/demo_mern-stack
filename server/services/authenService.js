@@ -42,7 +42,6 @@ const checkAccessToken = async (req, res) => {
  */
 const handleSignup = async (req, res) => {
   const { username, password } = req.body;
-  console.log(username)
   if ( !username || !password) {
     return res
     .status(400)

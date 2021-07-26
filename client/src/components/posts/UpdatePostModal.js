@@ -14,7 +14,6 @@ export const UpdatePostModal = () => {
   updatePost, 
   setShowToast } = useContext(PostContext);
   // init state
-  console.log(post)
   const [updatedPost, setUpdatedPost] = useState(post)
 
   const { title, description, url, status } = updatedPost;

@@ -1,4 +1,4 @@
-export const baseUrl = process.env.NODE_ENV !== 'production' ? 'http://localhost:5000/api' : 'deployURL';
+export const baseUrl = process.env.NODE_ENV !== 'production' ? 'http://localhost:5000/api' : 'https://lit-wildwood-28685.herokuapp.com/api';
 
 export const LOCAL_STORAGE_TOKEN_NAME = 'accessToken';
 
